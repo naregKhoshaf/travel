@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		3DD76A821C89D3FC00440CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76A811C89D3FC00440CBB /* AppDelegate.swift */; };
-		3DD76A841C89D3FC00440CBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76A831C89D3FC00440CBB /* ViewController.swift */; };
-		3DD76A871C89D3FC00440CBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76A851C89D3FC00440CBB /* Main.storyboard */; };
 		3DD76A891C89D3FC00440CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76A881C89D3FC00440CBB /* Assets.xcassets */; };
 		3DD76A8C1C89D3FC00440CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76A8A1C89D3FC00440CBB /* LaunchScreen.storyboard */; };
 		3DD76A971C89D3FC00440CBB /* TravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76A961C89D3FC00440CBB /* TravelTests.swift */; };
 		3DD76AA21C89D3FC00440CBB /* TravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76AA11C89D3FC00440CBB /* TravelUITests.swift */; };
+		3DD76AB11C89D43700440CBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76AAF1C89D43700440CBB /* HomeViewController.swift */; };
+		3DD76AB21C89D43700440CBB /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76AB01C89D43700440CBB /* HomeViewController.xib */; };
+		3DD76AB51C89D56500440CBB /* MyTripsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76AB31C89D56500440CBB /* MyTripsCollectionViewController.swift */; };
+		3DD76AB61C89D56500440CBB /* MyTripsCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76AB41C89D56500440CBB /* MyTripsCollectionViewController.xib */; };
+		3DD76AB91C89D57C00440CBB /* MyTripsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76AB71C89D57C00440CBB /* MyTripsCollectionViewCell.swift */; };
+		3DD76ABA1C89D57C00440CBB /* MyTripsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76AB81C89D57C00440CBB /* MyTripsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +40,6 @@
 /* Begin PBXFileReference section */
 		3DD76A7E1C89D3FC00440CBB /* Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD76A811C89D3FC00440CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DD76A831C89D3FC00440CBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3DD76A861C89D3FC00440CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DD76A881C89D3FC00440CBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DD76A8B1C89D3FC00440CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DD76A8D1C89D3FC00440CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +49,12 @@
 		3DD76A9D1C89D3FC00440CBB /* TravelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD76AA11C89D3FC00440CBB /* TravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelUITests.swift; sourceTree = "<group>"; };
 		3DD76AA31C89D3FC00440CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD76AAF1C89D43700440CBB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3DD76AB01C89D43700440CBB /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		3DD76AB31C89D56500440CBB /* MyTripsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTripsCollectionViewController.swift; sourceTree = "<group>"; };
+		3DD76AB41C89D56500440CBB /* MyTripsCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTripsCollectionViewController.xib; sourceTree = "<group>"; };
+		3DD76AB71C89D57C00440CBB /* MyTripsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTripsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3DD76AB81C89D57C00440CBB /* MyTripsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTripsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				3DD76A811C89D3FC00440CBB /* AppDelegate.swift */,
-				3DD76A831C89D3FC00440CBB /* ViewController.swift */,
-				3DD76A851C89D3FC00440CBB /* Main.storyboard */,
+				3DD76AAF1C89D43700440CBB /* HomeViewController.swift */,
+				3DD76AB31C89D56500440CBB /* MyTripsCollectionViewController.swift */,
+				3DD76AB41C89D56500440CBB /* MyTripsCollectionViewController.xib */,
+				3DD76AB71C89D57C00440CBB /* MyTripsCollectionViewCell.swift */,
+				3DD76AB81C89D57C00440CBB /* MyTripsCollectionViewCell.xib */,
+				3DD76AB01C89D43700440CBB /* HomeViewController.xib */,
 				3DD76A881C89D3FC00440CBB /* Assets.xcassets */,
 				3DD76A8A1C89D3FC00440CBB /* LaunchScreen.storyboard */,
 				3DD76A8D1C89D3FC00440CBB /* Info.plist */,
@@ -231,7 +243,9 @@
 			files = (
 				3DD76A8C1C89D3FC00440CBB /* LaunchScreen.storyboard in Resources */,
 				3DD76A891C89D3FC00440CBB /* Assets.xcassets in Resources */,
-				3DD76A871C89D3FC00440CBB /* Main.storyboard in Resources */,
+				3DD76ABA1C89D57C00440CBB /* MyTripsCollectionViewCell.xib in Resources */,
+				3DD76AB21C89D43700440CBB /* HomeViewController.xib in Resources */,
+				3DD76AB61C89D56500440CBB /* MyTripsCollectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD76A841C89D3FC00440CBB /* ViewController.swift in Sources */,
 				3DD76A821C89D3FC00440CBB /* AppDelegate.swift in Sources */,
+				3DD76AB11C89D43700440CBB /* HomeViewController.swift in Sources */,
+				3DD76AB51C89D56500440CBB /* MyTripsCollectionViewController.swift in Sources */,
+				3DD76AB91C89D57C00440CBB /* MyTripsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3DD76A851C89D3FC00440CBB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3DD76A861C89D3FC00440CBB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3DD76A8A1C89D3FC00440CBB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -403,6 +411,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.Travel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -414,6 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.Travel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
