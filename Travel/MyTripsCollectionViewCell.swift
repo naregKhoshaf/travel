@@ -10,9 +10,9 @@ import UIKit
 
 class MyTripsCollectionViewCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var tripCellImageView: UIImageView!
+    
+    func setCellImage(photo: String) {
+        tripCellImageView.image = UIImage(named: photo)
     }
-
 }

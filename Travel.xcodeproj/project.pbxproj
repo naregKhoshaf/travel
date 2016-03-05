@@ -9,15 +9,14 @@
 /* Begin PBXBuildFile section */
 		3DD76A821C89D3FC00440CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76A811C89D3FC00440CBB /* AppDelegate.swift */; };
 		3DD76A891C89D3FC00440CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76A881C89D3FC00440CBB /* Assets.xcassets */; };
-		3DD76A8C1C89D3FC00440CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76A8A1C89D3FC00440CBB /* LaunchScreen.storyboard */; };
 		3DD76A971C89D3FC00440CBB /* TravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76A961C89D3FC00440CBB /* TravelTests.swift */; };
 		3DD76AA21C89D3FC00440CBB /* TravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76AA11C89D3FC00440CBB /* TravelUITests.swift */; };
 		3DD76AB11C89D43700440CBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76AAF1C89D43700440CBB /* HomeViewController.swift */; };
 		3DD76AB21C89D43700440CBB /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76AB01C89D43700440CBB /* HomeViewController.xib */; };
-		3DD76AB51C89D56500440CBB /* MyTripsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76AB31C89D56500440CBB /* MyTripsCollectionViewController.swift */; };
-		3DD76AB61C89D56500440CBB /* MyTripsCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76AB41C89D56500440CBB /* MyTripsCollectionViewController.xib */; };
 		3DD76AB91C89D57C00440CBB /* MyTripsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76AB71C89D57C00440CBB /* MyTripsCollectionViewCell.swift */; };
 		3DD76ABA1C89D57C00440CBB /* MyTripsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76AB81C89D57C00440CBB /* MyTripsCollectionViewCell.xib */; };
+		3DD76ABF1C8B91CD00440CBB /* MyTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD76ABD1C8B91CD00440CBB /* MyTripsViewController.swift */; };
+		3DD76AC01C8B91CD00440CBB /* MyTripsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD76ABE1C8B91CD00440CBB /* MyTripsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +40,6 @@
 		3DD76A7E1C89D3FC00440CBB /* Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD76A811C89D3FC00440CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD76A881C89D3FC00440CBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3DD76A8B1C89D3FC00440CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DD76A8D1C89D3FC00440CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD76A921C89D3FC00440CBB /* TravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD76A961C89D3FC00440CBB /* TravelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTests.swift; sourceTree = "<group>"; };
@@ -51,10 +49,10 @@
 		3DD76AA31C89D3FC00440CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD76AAF1C89D43700440CBB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3DD76AB01C89D43700440CBB /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		3DD76AB31C89D56500440CBB /* MyTripsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTripsCollectionViewController.swift; sourceTree = "<group>"; };
-		3DD76AB41C89D56500440CBB /* MyTripsCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTripsCollectionViewController.xib; sourceTree = "<group>"; };
 		3DD76AB71C89D57C00440CBB /* MyTripsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTripsCollectionViewCell.swift; sourceTree = "<group>"; };
 		3DD76AB81C89D57C00440CBB /* MyTripsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTripsCollectionViewCell.xib; sourceTree = "<group>"; };
+		3DD76ABD1C8B91CD00440CBB /* MyTripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTripsViewController.swift; sourceTree = "<group>"; };
+		3DD76ABE1C8B91CD00440CBB /* MyTripsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTripsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +105,12 @@
 			children = (
 				3DD76A811C89D3FC00440CBB /* AppDelegate.swift */,
 				3DD76AAF1C89D43700440CBB /* HomeViewController.swift */,
-				3DD76AB31C89D56500440CBB /* MyTripsCollectionViewController.swift */,
-				3DD76AB41C89D56500440CBB /* MyTripsCollectionViewController.xib */,
+				3DD76AB01C89D43700440CBB /* HomeViewController.xib */,
+				3DD76ABD1C8B91CD00440CBB /* MyTripsViewController.swift */,
+				3DD76ABE1C8B91CD00440CBB /* MyTripsViewController.xib */,
 				3DD76AB71C89D57C00440CBB /* MyTripsCollectionViewCell.swift */,
 				3DD76AB81C89D57C00440CBB /* MyTripsCollectionViewCell.xib */,
-				3DD76AB01C89D43700440CBB /* HomeViewController.xib */,
 				3DD76A881C89D3FC00440CBB /* Assets.xcassets */,
-				3DD76A8A1C89D3FC00440CBB /* LaunchScreen.storyboard */,
 				3DD76A8D1C89D3FC00440CBB /* Info.plist */,
 			);
 			path = Travel;
@@ -241,11 +238,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD76A8C1C89D3FC00440CBB /* LaunchScreen.storyboard in Resources */,
 				3DD76A891C89D3FC00440CBB /* Assets.xcassets in Resources */,
 				3DD76ABA1C89D57C00440CBB /* MyTripsCollectionViewCell.xib in Resources */,
+				3DD76AC01C8B91CD00440CBB /* MyTripsViewController.xib in Resources */,
 				3DD76AB21C89D43700440CBB /* HomeViewController.xib in Resources */,
-				3DD76AB61C89D56500440CBB /* MyTripsCollectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD76A821C89D3FC00440CBB /* AppDelegate.swift in Sources */,
+				3DD76ABF1C8B91CD00440CBB /* MyTripsViewController.swift in Sources */,
 				3DD76AB11C89D43700440CBB /* HomeViewController.swift in Sources */,
-				3DD76AB51C89D56500440CBB /* MyTripsCollectionViewController.swift in Sources */,
 				3DD76AB91C89D57C00440CBB /* MyTripsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,17 +303,6 @@
 			targetProxy = 3DD76A9E1C89D3FC00440CBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3DD76A8A1C89D3FC00440CBB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3DD76A8B1C89D3FC00440CBB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3DD76AA41C89D3FC00440CBB /* Debug */ = {
@@ -494,6 +479,7 @@
 				3DD76AA81C89D3FC00440CBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DD76AA91C89D3FC00440CBB /* Build configuration list for PBXNativeTarget "TravelTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +488,7 @@
 				3DD76AAB1C89D3FC00440CBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DD76AAC1C89D3FC00440CBB /* Build configuration list for PBXNativeTarget "TravelUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +497,7 @@
 				3DD76AAE1C89D3FC00440CBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
