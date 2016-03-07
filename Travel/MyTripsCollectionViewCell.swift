@@ -15,4 +15,11 @@ class MyTripsCollectionViewCell: UICollectionViewCell {
     func setCellImage(photo: String) {
         tripCellImageView.image = UIImage(named: photo)
     }
+    
+    override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
+        super.applyLayoutAttributes(layoutAttributes)
+        let circularlayoutAttributes = layoutAttributes as! CarouselCollectionViewLayoutAttributes
+        self.layer.anchorPoint = circularlayoutAttributes.anchorPoint
+        self.center.y += (circularlayoutAttributes.anchorPoint.y - 0.5) * CGRectGetHeight(self.bounds)
+    }
 }
