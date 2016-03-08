@@ -15,7 +15,7 @@ class MyTripsCollectionViewCell: UICollectionViewCell {
     func setCellImage(photo: String) {
         tripCellImageView.image = UIImage(named: photo)
     }
-    
+    // superclass implementation to apply teh default properties like center and transform, but since anchorPoint is a custom property, you have to apply that manually.  Update center.y to the center of the layout circle to compensate for the change in anchorPoint.y
     override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
         super.applyLayoutAttributes(layoutAttributes)
         let circularlayoutAttributes = layoutAttributes as! CarouselCollectionViewLayoutAttributes

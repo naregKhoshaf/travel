@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6FA401AC380588EED2A6C652E394A37AFBB01154",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6FA401AC380588EED2A6C652E394A37AFBB01154" : 0,
+    "D8BD520A913D9D99E3499E94F4097ECE1645FB47" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E16D29A4-0434-4351-B43E-7D76B512B7FE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6FA401AC380588EED2A6C652E394A37AFBB01154" : "Travel\/",
+    "D8BD520A913D9D99E3499E94F4097ECE1645FB47" : "Travel\/iCarousel\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Travel",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Travel.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:naregKhoshaf\/travel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6FA401AC380588EED2A6C652E394A37AFBB01154"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:nicklockwood\/iCarousel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D8BD520A913D9D99E3499E94F4097ECE1645FB47"
+    }
+  ]
+}
