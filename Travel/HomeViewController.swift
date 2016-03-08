@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBAction func myTripsButton(sender: AnyObject) {
-        presentViewController(MyTripsViewController(), animated: true, completion: nil)
+        presentViewController(VacationViewController(), animated: true, completion: nil)
     }
 
 }

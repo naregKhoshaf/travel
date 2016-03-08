@@ -44,6 +44,7 @@ class CarouselCollectionViewLayout: UICollectionViewLayout {
     // This is a subclass of layout and as a result we need to handle all the parts of the Layout
     let itemSize = CGSize(width: 300, height: 300)
     
+    // angleAtExtreme is just the ending value of where we want the caousel to stop and angle is just the starting point.
     var angleAtExtreme: CGFloat {
         return collectionView!.numberOfItemsInSection(0) > 0 ?
             -CGFloat(collectionView!.numberOfItemsInSection(0) - 1) * anglePerItem : 0
@@ -53,14 +54,16 @@ class CarouselCollectionViewLayout: UICollectionViewLayout {
             CGRectGetWidth(collectionView!.bounds))
     }
     
+    //When the radius changes, recalculate everything
     var radius: CGFloat = 500 {
         didSet {
             invalidateLayout()
         }
-    } //When the radius changes, recalculate everything
+    }
     
     var anglePerItem: CGFloat {
-        return atan((itemSize.width + 100) / radius) // This ensures cells aren't spread too far apart
+        // This ensures cells aren't spread too far apart
+        return atan((itemSize.width + 250) / radius)
     }
     
     // Holds layout attribute instances
@@ -96,7 +99,7 @@ class CarouselCollectionViewLayout: UICollectionViewLayout {
             attributes.center = CGPoint(x: centerX, y: CGRectGetMidY(self.collectionView!.bounds))
             // 3 Rotate each item by the amount anglePerItem * i
             attributes.angle = self.angle + (self.anglePerItem * CGFloat(i))
-            
+            // This is the anchorPoint in which we set x and y coordinates. 
             attributes.anchorPoint = CGPoint(x: 0.5, y: anchorPointY)
 
             return attributes
@@ -113,7 +116,7 @@ class CarouselCollectionViewLayout: UICollectionViewLayout {
         -> UICollectionViewLayoutAttributes? {
             return attributesList[indexPath.row]
     }
-    
+    // This tells the collection view to invalidate it's layout as it scrolls, which calls prepareLayout().  This updates/recalculated the angular position of the cell.
     override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
         return true
     }
@@ -128,10 +131,11 @@ class CarouselCollectionViewLayoutAttributes: UICollectionViewLayoutAttributes {
     // 2. Transform willl be equal to the the angle.
     var angle: CGFloat = 0 {
         didSet {
+            zIndex = Int(angle * -100)
             transform = CGAffineTransformMakeRotation(angle)
         }
     }
-    
+
     // 3. UICollecionViewLayoutAttributes  needs to conform to NSCopying protocol because the attribute's objects can be copied internally when the collection view is performing a layout.  Override this method to gurantee that both the anchorPoint and angle properties are set when the object is copied.
     override func copyWithZone(zone: NSZone) -> AnyObject {
         let copiedAttributes: CarouselCollectionViewLayoutAttributes = super.copyWithZone(zone) as! CarouselCollectionViewLayoutAttributes
