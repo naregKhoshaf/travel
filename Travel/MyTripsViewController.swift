@@ -39,6 +39,7 @@ class MyTripsViewController: UIViewController, UICollectionViewDataSource, UICol
     }
 }
 
+// TODO: Simplify Code here
 
 class CarouselCollectionViewLayout: UICollectionViewLayout {
     // This is a subclass of layout and as a result we need to handle all the parts of the Layout
@@ -55,7 +56,7 @@ class CarouselCollectionViewLayout: UICollectionViewLayout {
     }
     
     //When the radius changes, recalculate everything
-    var radius: CGFloat = 500 {
+    var radius: CGFloat = 1500 {
         didSet {
             invalidateLayout()
         }
@@ -89,6 +90,7 @@ class CarouselCollectionViewLayout: UICollectionViewLayout {
         let anchorPointY = ((itemSize.height / 2.0) + radius) / itemSize.height
         
         // map here creates a new array with the reuslts of the closure for each element in the range.
+        // TODO: Make this a for loop
         attributesList = (0..<collectionView!.numberOfItemsInSection(0)).map { (i)
             -> CarouselCollectionViewLayoutAttributes in
             // 1 Create an instance of CoureselCollectionViewLayoutAttributes for each index path, and then set its size
@@ -121,6 +123,8 @@ class CarouselCollectionViewLayout: UICollectionViewLayout {
         return true
     }
 }
+
+// TODO: Extract/Remove code from UICollectionViewLayoutAttributes and put it into CarouselCollectionViewLayout
 
 class CarouselCollectionViewLayoutAttributes: UICollectionViewLayoutAttributes {
     // I subclassed collectionViewLayout but I also have to subclass the CollectionViewLayoutsAttributes

@@ -15,10 +15,14 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Travel_Background" translatesAutoresizingMaskIntoConstraints="NO" id="zJb-Rn-NZs">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FW1-51-06G">
                     <rect key="frame" x="271" y="285" width="59" height="30"/>
-                    <color key="backgroundColor" red="0.49042523616466305" green="1" blue="0.93795468203945565" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="My Trips"/>
+                    <state key="normal" title="My Trips">
+                        <color key="titleColor" red="1" green="0.93517474025184733" blue="0.7271483221754661" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="myTripsButton:" destination="-1" eventType="touchUpInside" id="kER-7H-X2V"/>
                     </connections>
@@ -28,7 +32,14 @@
             <constraints>
                 <constraint firstItem="FW1-51-06G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0BQ-0E-Id3"/>
                 <constraint firstItem="FW1-51-06G" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="17t-pR-QvR"/>
+                <constraint firstItem="zJb-Rn-NZs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bLB-EP-7zg"/>
+                <constraint firstAttribute="bottom" secondItem="zJb-Rn-NZs" secondAttribute="bottom" id="eIn-3W-ytP"/>
+                <constraint firstAttribute="trailing" secondItem="zJb-Rn-NZs" secondAttribute="trailing" id="rDN-SG-Cpc"/>
+                <constraint firstItem="zJb-Rn-NZs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tb1-1A-T5g"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Travel_Background" width="540" height="817"/>
+    </resources>
 </document>
