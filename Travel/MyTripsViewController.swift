@@ -18,9 +18,14 @@ class MyTripsViewController: UIViewController, UICollectionViewDataSource, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setup()
+    }
+    
+    private func setup() {
         let cellNib = UINib(nibName: "MyTripsCollectionViewCell", bundle: nil)
         tripsCollectionView.registerNib(cellNib, forCellWithReuseIdentifier: reuseIdentifier)
+        
+        
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -70,7 +75,7 @@ class CarouselCollectionViewLayout: UICollectionViewLayout {
     // Holds layout attribute instances
     var attributesList = [CarouselCollectionViewLayoutAttributes]()
     
-    // Declare how big the Content of your collection should be.
+    // Declare how big the Content of your collection should be. REQUIRED OVERRIDE
     override func collectionViewContentSize() -> CGSize {
         return CGSize(width: CGFloat(collectionView!.numberOfItemsInSection(0)) * itemSize.width,
             height: CGRectGetHeight(collectionView!.bounds))
@@ -108,17 +113,16 @@ class CarouselCollectionViewLayout: UICollectionViewLayout {
         }
     }
     
-    // Returns an array of layout attributes for all of the cells and views in the specified rectangle.
+    // Returns an array of layout attributes for all of the cells and views in the specified rectangle. REQUIRED OVERRIDE
     override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return attributesList
     }
     
-    // Returns the attributes for the item at the given idex path.
-    override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath)
-        -> UICollectionViewLayoutAttributes? {
+    // Returns the attributes for the item at the given idex path. REQUIRED OVERRIDE
+    override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
             return attributesList[indexPath.row]
     }
-    // This tells the collection view to invalidate it's layout as it scrolls, which calls prepareLayout().  This updates/recalculated the angular position of the cell.
+    // This tells the collection view to invalidate it's layout as it scrolls, which calls prepareLayout().  This updates/recalculated the angular position of the cell. REQUIRED OVERRIDE
     override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
         return true
     }
@@ -136,7 +140,7 @@ class CarouselCollectionViewLayoutAttributes: UICollectionViewLayoutAttributes {
     var angle: CGFloat = 0 {
         didSet {
             zIndex = Int(angle * -100)
-            transform = CGAffineTransformMakeRotation(angle)
+            transform3D = CATransform3DMakeRotation(angle, 100, 100, 100)
         }
     }
 

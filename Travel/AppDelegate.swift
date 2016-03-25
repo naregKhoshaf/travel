@@ -13,19 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         let frame = UIScreen.mainScreen().bounds
         window = UIWindow(frame: frame)
         window?.makeKeyAndVisible()
         
-        setRootViewController(HomeViewController())
+//        let rootVC = HomeViewController()
+        let rootVC = VacationViewController()
+        setRootViewController(rootVC)
         
         return true
     }
     
     private func setRootViewController(rootVC: UIViewController) {
-        window?.rootViewController = UINavigationController(rootViewController: rootVC)
+        window?.rootViewController = rootVC
     }
 }
 
